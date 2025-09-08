@@ -1,0 +1,173 @@
+/* General Body and Background Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+    /* Text color for the whole page */
+    background: linear-gradient(180deg, #1f1f1f 0%, #a457a5 50%, #6e1c6e 100%);
+    scroll-behavior: smooth;
+    /* To make anchor links smooth scrolling */
+}
+
+/* Navbar Styling */
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Slightly transparent background for navbar */
+    position: sticky;
+    /* Makes the navbar stick to the top */
+    top: 0;
+    z-index: 1000;
+    /* Ensures navbar is above other content */
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    margin-left: 25px;
+    /* Changed from right to left for better spacing */
+    margin-right: 0;
+    /* Resetting right margin */
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    /* Slightly smaller font for navbar links */
+    transition: color 0.3s ease;
+    /* Smooth transition for hover effect */
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+    color: #d3d3d3;
+    /* Lighter color on hover */
+}
+
+.page-info {
+    font-size: 0.9em;
+    opacity: 0.7;
+    /* Slightly faded for less prominence */
+}
+
+/* Main Content Styling - Home Section */
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    /* Full viewport height */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.content h1 {
+    font-size: 3.5em;
+    /* Larger heading */
+    font-weight: normal;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.content p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    max-width: 600px;
+    /* Limit width for readability */
+}
+
+.content p em {
+    font-style: italic;
+    color: #ccc;
+}
+
+/* General Section Styling */
+.section {
+    width: 100%;
+    padding: 50px 20px;
+    /* Vertical and horizontal padding */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center content within section */
+    text-align: center;
+    /* Center text */
+    min-height: 50vh;
+    /* Minimum height for each section */
+}
+
+.section h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #7b1fa2;
+    /* Accent color for headings */
+    padding-bottom: 10px;
+    width: fit-content;
+    /* Adjust width to content */
+}
+
+.section h3 {
+    font-size: 1.8em;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.section ul {
+    list-style: disc;
+    /* Standard bullet points */
+    padding-left: 0;
+    /* Remove default padding */
+    margin-left: 20px;
+    /* Add some left margin for bullets */
+    max-width: 700px;
+    /* Limit width for readability */
+    text-align: left;
+    /* Align list items to the left */
+}
+
+.section ul li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    /* Spacing between list items */
+}
+
+.section ul li a {
+    color: #bb86fc;
+    /* A purple accent color for links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.section ul li a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Specific styling for skills and experience lists */
+#skills ul,
+#experience ul {
+    text-align: left;
+    /* Ensure list items are left-aligned */
+    margin-left: auto;
+    margin-right: auto;
+}
